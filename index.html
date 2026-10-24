@@ -4,11 +4,13 @@
 <head>
   <meta charset="utf-8">
   <meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover">
-  <title>Daily Streak - plan your day, keep your streak</title>
-  <meta name="description" content="Daily Streak is a free daily planner with targets, carry-over, streaks, Pomodoro timer, insights, notes and a sticky-note board. Everything stays in your browser.">
-  <meta property="og:title" content="Daily Streak">
+  <title>Streakly - plan your day, keep your streak</title>
+  <meta name="description" content="Streakly is a free daily planner with targets, carry-over, streaks, Pomodoro timer, insights, notes and a sticky-note board. Everything stays in your browser.">
+  <meta property="og:title" content="Streakly">
   <meta property="og:description" content="Plan your day with targets, keep your streak alive. Free, private, no sign-up.">
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔥</text></svg>">
+  <meta name="theme-color" content="#121620">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cdefs%3E%3ClinearGradient id='bg' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%232b3545'/%3E%3Cstop offset='1' stop-color='%2310131a'/%3E%3C/linearGradient%3E%3ClinearGradient id='fl' x1='0' y1='1' x2='0' y2='0'%3E%3Cstop offset='0' stop-color='%23ff6b4a'/%3E%3Cstop offset='1' stop-color='%23ffd166'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='100' height='100' rx='22' fill='url(%23bg)'/%3E%3Cpath d='M50 8 C34 28 22 46 22 62 C22 80 34 94 50 94 C66 94 78 80 78 62 C78 50 70 40 62 33 C65 44 58 50 52 50 C45 50 40 45 41 38 C42 29 47 22 50 8 Z' fill='url(%23fl)'/%3E%3Cpath d='M50 46 C44 54 40 61 40 68 C40 78 44 84 50 84 C56 84 60 78 60 69 C60 63 56 58 52 55 C53 60 50 63 48 61 C46 59 47 54 50 46 Z' fill='%23fff3d6' opacity='0.92'/%3E%3C/svg%3E">
+  <link rel="apple-touch-icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cdefs%3E%3ClinearGradient id='bg2' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%232b3545'/%3E%3Cstop offset='1' stop-color='%2310131a'/%3E%3C/linearGradient%3E%3ClinearGradient id='fl2' x1='0' y1='1' x2='0' y2='0'%3E%3Cstop offset='0' stop-color='%23ff6b4a'/%3E%3Cstop offset='1' stop-color='%23ffd166'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='100' height='100' rx='22' fill='url(%23bg2)'/%3E%3Cpath d='M50 8 C34 28 22 46 22 62 C22 80 34 94 50 94 C66 94 78 80 78 62 C78 50 70 40 62 33 C65 44 58 50 52 50 C45 50 40 45 41 38 C42 29 47 22 50 8 Z' fill='url(%23fl2)'/%3E%3Cpath d='M50 46 C44 54 40 61 40 68 C40 78 44 84 50 84 C56 84 60 78 60 69 C60 63 56 58 52 55 C53 60 50 63 48 61 C46 59 47 54 50 46 Z' fill='%23fff3d6' opacity='0.92'/%3E%3C/svg%3E">
   <style>
     :root {
       color-scheme: light;
@@ -6085,7 +6087,20 @@
   <div class="wrap">
     <header class="top">
       <div class="title-group">
-        <h1>Daily Streak</h1>
+        <svg width="30" height="30" viewBox="0 0 100 100" style="align-self:center;flex:none" aria-hidden="true">
+          <defs>
+            <linearGradient id="brandBg" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0" stop-color="#2b3545" /><stop offset="1" stop-color="#10131a" />
+            </linearGradient>
+            <linearGradient id="brandFl" x1="0" y1="1" x2="0" y2="0">
+              <stop offset="0" stop-color="#ff6b4a" /><stop offset="1" stop-color="#ffd166" />
+            </linearGradient>
+          </defs>
+          <rect width="100" height="100" rx="22" fill="url(#brandBg)" />
+          <path d="M50 8 C34 28 22 46 22 62 C22 80 34 94 50 94 C66 94 78 80 78 62 C78 50 70 40 62 33 C65 44 58 50 52 50 C45 50 40 45 41 38 C42 29 47 22 50 8 Z" fill="url(#brandFl)" />
+          <path d="M50 46 C44 54 40 61 40 68 C40 78 44 84 50 84 C56 84 60 78 60 69 C60 63 56 58 52 55 C53 60 50 63 48 61 C46 59 47 54 50 46 Z" fill="#fff3d6" opacity="0.92" />
+        </svg>
+        <h1>Streakly</h1>
         <span class="streak mono" id="streakBadge" hidden></span>
       </div>
       <div class="top-right">
@@ -6474,8 +6489,12 @@
           '<span><kbd>Delete</kbd></span><span>Delete selected stickies</span>' +
           '<span><kbd>Esc</kbd></span><span>Clear selection / close pop-ups</span>' +
           '<span><kbd>Shift</kbd> + drag</span><span>Select many stickies (or press and hold, then drag)</span>' +
-          '<span><kbd>Space</kbd> + drag</span><span>Move around the board</span></div></div>' +
-          '<div class="set-row"><div class="set-txt"><div class="set-l">Daily Streak v1.0</div><div class="set-x">Free and private. Your data never leaves your device.</div></div></div></div>';
+          '<span><kbd>Space</kbd> + drag</span><span>Move around the board</span></div></div></div>';
+        h += '<div class="card set-card"><h3>About</h3>' +
+          '<div class="set-row col"><div class="set-txt"><div class="set-l">Why Streakly exists</div><div class="set-x">Hi, I’m <b>Shubham Solanki</b>. I built Streakly for my friends — so they could turn their daily goals into a habit without an account, ads, or their data sitting on someone else’s server. It runs quietly in your own browser, exactly the way it should. Hope it helps you build something good, one day at a time. ❤️</div></div></div>' +
+          '<div class="set-row col"><div class="set-txt"><div class="set-l">A bit about me</div><div class="set-x">I’m a student at <b>Armour Infosec</b>, an ethical hacking and cybersecurity training institute in Indore, where I’m learning penetration testing and security research. Streakly is a small side project — built with the same care I put into everything else I make.</div></div></div>' +
+          '<div class="set-row col"><div class="set-txt"><div class="set-l">Enjoying Streakly?</div><div class="set-x">It’s free, it always will be, and it’s open source. If it’s helped you stay on track, a ⭐ on <a href="https://github.com/Shubhamsolanki1" target="_blank" rel="noopener" style="color:var(--accent)">GitHub</a> genuinely makes my day — and if a friend needs a little nudge to build better habits, send this their way.</div></div></div>' +
+          '<div class="set-row"><div class="set-txt"><div class="set-l">Streakly v1.0</div><div class="set-x">Free and private, forever. Your data never leaves your device.</div></div></div></div>';
         return h;
       }
       document.getElementById("setBody").addEventListener("change", function (ev) {
@@ -6490,7 +6509,7 @@
             if (!keys.length) throw new Error("bad");
             var st = null; try { st = JSON.parse(o.data[STORE_KEY]); } catch (e2) { }
             pendingImport = { data: o.data, keys: keys, when: o.exportedAt, tasks: st && st.tasks ? st.tasks.length : 0 };
-          } catch (err) { pendingImport = null; setFlash("That file is not a Daily Streak backup. Choose the .json file you downloaded from here."); return; }
+          } catch (err) { pendingImport = null; setFlash("That file is not a Streakly backup. Choose the .json file you downloaded from here."); return; }
           renderSettings();
         };
         r.readAsText(f);
@@ -7946,7 +7965,7 @@
 
         var l = pomo.log[todayStr()] || { n: 0, min: 0 };
         document.getElementById("pToday").textContent = l.n; document.getElementById("pMin").textContent = l.min;
-        document.title = pomo.endAt ? txt + " · " + MODE_LABEL[pomo.mode] : "Daily Streak";
+        document.title = pomo.endAt ? txt + " · " + MODE_LABEL[pomo.mode] : "Streakly";
       }
 
       // ---------------- INSIGHTS ----------------
